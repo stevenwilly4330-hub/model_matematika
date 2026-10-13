@@ -1,206 +1,199 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1000" height="600" viewBox="0 0 1000 600">
-
+     width="1100" height="680" viewBox="0 0 1100 680">
   <defs>
-    <marker id="blueArrow" markerWidth="8" markerHeight="8"
-            refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#1689c7"/>
+    <marker id="blueArrow" markerWidth="7" markerHeight="7"
+            refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 L7 3.5 L0 7 Z" fill="#2386c8"/>
     </marker>
-    <marker id="pinkArrow" markerWidth="8" markerHeight="8"
-            refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#c43c96"/>
+    <marker id="pinkArrow" markerWidth="7" markerHeight="7"
+            refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 L7 3.5 L0 7 Z" fill="#c83c9b"/>
     </marker>
-    <marker id="darkArrow" markerWidth="8" markerHeight="8"
-            refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#444"/>
+    <marker id="grayArrow" markerWidth="7" markerHeight="7"
+            refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 L7 3.5 L0 7 Z" fill="#777"/>
     </marker>
-
     <style>
-      .bluebox {
-        fill: #b8def5;
-        stroke: #1689c7;
-        stroke-width: 1.5;
+      .bluebox { fill:#b9def5; stroke:#2386c8; stroke-width:1.6; }
+      .pinkbox { fill:#f3b9df; stroke:#c83c9b; stroke-width:1.6; }
+      .blue {
+        fill:none; stroke:#2386c8; stroke-width:2;
+        marker-end:url(#blueArrow);
       }
-      .pinkbox {
-        fill: #f4b9df;
-        stroke: #c43c96;
-        stroke-width: 1.5;
+      .pink {
+        fill:none; stroke:#c83c9b; stroke-width:2;
+        marker-end:url(#pinkArrow);
       }
-      .blueflow {
-        fill: none;
-        stroke: #1689c7;
-        stroke-width: 1.8;
-        marker-end: url(#blueArrow);
+      .dblue {
+        fill:none; stroke:#58a6d6; stroke-width:1.8;
+        stroke-dasharray:6 5; marker-end:url(#blueArrow);
       }
-      .pinkflow {
-        fill: none;
-        stroke: #c43c96;
-        stroke-width: 1.8;
-        marker-end: url(#pinkArrow);
-      }
-      .transmission {
-        fill: none;
-        stroke: #777;
-        stroke-width: 1.5;
-        stroke-dasharray: 6 5;
-        marker-end: url(#darkArrow);
+      .dpink {
+        fill:none; stroke:#c83c9b; stroke-width:1.8;
+        stroke-dasharray:6 5; marker-end:url(#pinkArrow);
       }
       .state {
-        font-family: "Times New Roman", serif;
-        font-size: 19px;
-        font-style: italic;
-        text-anchor: middle;
-        dominant-baseline: middle;
-        fill: #17243b;
+        font-family:"Times New Roman",serif;
+        font-size:21px; font-style:italic;
+        text-anchor:middle; dominant-baseline:middle;
+        fill:#17243b;
       }
-      .param {
-        font-family: "Times New Roman", serif;
-        font-size: 15px;
-        font-style: italic;
-        fill: #222;
+      .p {
+        font-family:"Times New Roman",serif;
+        font-size:17px; font-style:italic; fill:#222;
       }
     </style>
   </defs>
 
-  <!-- KOMPATEMEN KIRI -->
-  <rect class="bluebox" x="205" y="110" width="65" height="34" rx="4"/>
-  <text class="state" x="237" y="127">Iₘ</text>
+  <!-- KOLOM KIRI -->
+  <rect class="bluebox" x="155" y="150" width="90" height="48" rx="5"/>
+  <text class="state" x="200" y="174">I_fm</text>
 
-  <rect class="bluebox" x="205" y="190" width="65" height="34" rx="4"/>
-  <text class="state" x="237" y="207">Sₘ</text>
+  <rect class="bluebox" x="155" y="290" width="90" height="48" rx="5"/>
+  <text class="state" x="200" y="314">S_m</text>
 
-  <rect class="bluebox" x="205" y="270" width="65" height="34" rx="4"/>
-  <text class="state" x="237" y="287">Iᵥₘ</text>
+  <rect class="bluebox" x="155" y="430" width="90" height="48" rx="5"/>
+  <text class="state" x="200" y="454">I_vm</text>
 
-  <!-- KOMPATEMEN TENGAH -->
-  <rect class="pinkbox" x="365" y="95" width="75" height="34" rx="4"/>
-  <text class="state" x="402" y="112">Iₕ꜀</text>
+  <!-- KELUARAN DAN ALIRAN KOLOM KIRI -->
+  <path class="blue" d="M200 150 V95"/>
+  <text class="p" x="212" y="118">μ_m</text>
 
-  <rect class="pinkbox" x="365" y="175" width="75" height="34" rx="4"/>
-  <text class="state" x="402" y="192">Iₕₐ</text>
+  <path class="blue" d="M200 290 V202"/>
+  <text class="p" x="213" y="251">bλ_vm</text>
 
-  <rect class="pinkbox" x="365" y="255" width="75" height="34" rx="4"/>
-  <text class="state" x="402" y="272">Iᵥ꜀</text>
+  <path class="blue" d="M200 338 V430"/>
+  <text class="p" x="213" y="386">bλ_fm</text>
 
-  <rect class="pinkbox" x="365" y="335" width="75" height="34" rx="4"/>
-  <text class="state" x="402" y="352">Iᵥₐ</text>
+  <path class="blue" d="M200 478 V530"/>
+  <text class="p" x="213" y="510">μ_m</text>
 
-  <!-- KOMPATEMEN KANAN -->
-  <rect class="pinkbox" x="535" y="95" width="75" height="34" rx="4"/>
-  <text class="state" x="572" y="112">Rₕ꜀</text>
+  <path class="blue" d="M75 314 H152"/>
+  <text class="p" x="91" y="300">τ_m</text>
 
-  <rect class="pinkbox" x="535" y="175" width="75" height="34" rx="4"/>
-  <text class="state" x="572" y="192">Rₕₐ</text>
+  <!-- KOLOM TENGAH -->
+  <rect class="pinkbox" x="390" y="105" width="100" height="48" rx="5"/>
+  <text class="state" x="440" y="129">I_fhc</text>
 
-  <rect class="pinkbox" x="535" y="255" width="75" height="34" rx="4"/>
-  <text class="state" x="572" y="272">Rᵥ꜀</text>
+  <rect class="pinkbox" x="390" y="245" width="100" height="48" rx="5"/>
+  <text class="state" x="440" y="269">I_fha</text>
 
-  <rect class="pinkbox" x="535" y="335" width="75" height="34" rx="4"/>
-  <text class="state" x="572" y="352">Rᵥₐ</text>
+  <rect class="pinkbox" x="390" y="385" width="100" height="48" rx="5"/>
+  <text class="state" x="440" y="409">I_vhc</text>
 
-  <!-- INPUT TAU M -->
-  <path class="blueflow" d="M150 207 H202"/>
-  <text class="param" x="166" y="197">τₘ</text>
+  <rect class="pinkbox" x="390" y="525" width="100" height="48" rx="5"/>
+  <text class="state" x="440" y="549">I_vha</text>
 
-  <!-- ALIRAN VERTIKAL KIRI -->
-  <path class="blueflow" d="M237 110 V72"/>
-  <text class="param" x="244" y="88">μₘ</text>
+  <!-- KOLOM KANAN -->
+  <rect class="pinkbox" x="655" y="105" width="100" height="48" rx="5"/>
+  <text class="state" x="705" y="129">R_hc</text>
 
-  <path class="blueflow" d="M237 144 V187"/>
-  <text class="param" x="247" y="169">bλᵥₘ</text>
+  <rect class="pinkbox" x="655" y="245" width="100" height="48" rx="5"/>
+  <text class="state" x="705" y="269">R_ha</text>
 
-  <path class="blueflow" d="M237 224 V267"/>
-  <text class="param" x="247" y="251">bλᶠₘ</text>
+  <rect class="pinkbox" x="655" y="385" width="100" height="48" rx="5"/>
+  <text class="state" x="705" y="409">R_vc</text>
 
-  <path class="blueflow" d="M237 304 V342"/>
-  <text class="param" x="246" y="327">μₘ</text>
+  <rect class="pinkbox" x="655" y="525" width="100" height="48" rx="5"/>
+  <text class="state" x="705" y="549">R_va</text>
 
-  <!-- TRANSMISI PUTUS-PUTUS DARI KIRI KE TENGAH -->
-  <path class="transmission"
-        d="M270 127 C310 127 322 112 362 112"/>
-  <text class="param" x="300" y="111">bλᶠₕ</text>
+  <!-- PANAH VERTIKAL TENGAH: PANAH BERTEMU DI TENGAH -->
+  <!-- Baris 1 dan 2 -->
+  <path class="pink" d="M440 153 V190"/>
+  <text class="p" x="450" y="174">γ_h</text>
 
-  <path class="transmission"
-        d="M270 207 C315 207 322 192 362 192"/>
-  <text class="param" x="298" y="190">bλᵥₘ</text>
+  <path class="pink" d="M440 245 V208"/>
+  <text class="p" x="450" y="232">μ_h</text>
 
-  <path class="transmission"
-        d="M270 207 C315 225 323 272 362 272"/>
-  <text class="param" x="295" y="244">bλₕₘ</text>
+  <!-- Baris 2 dan 3 -->
+  <path class="pink" d="M440 293 V330"/>
+  <text class="p" x="450" y="314">γ_h</text>
 
-  <path class="transmission"
-        d="M270 287 C315 310 323 352 362 352"/>
-  <text class="param" x="295" y="322">bλᵥₕ</text>
+  <path class="pink" d="M440 385 V348"/>
+  <text class="p" x="450" y="373">μ_h</text>
 
-  <!-- HUBUNGAN SILANG -->
-  <path class="transmission"
-        d="M270 127 C315 145 322 175 362 192"/>
+  <!-- Baris 3 dan 4 -->
+  <path class="pink" d="M440 433 V470"/>
+  <text class="p" x="450" y="454">γ_h</text>
 
-  <path class="transmission"
-        d="M270 127 C315 175 322 255 362 272"/>
+  <path class="pink" d="M440 525 V488"/>
+  <text class="p" x="450" y="513">μ_h</text>
 
-  <path class="transmission"
-        d="M270 287 C315 260 322 215 362 192"/>
+  <!-- PANAH VERTIKAL KANAN: PANAH BERTEMU DI TENGAH -->
+  <!-- Baris 1 dan 2 -->
+  <path class="pink" d="M705 153 V190"/>
+  <text class="p" x="716" y="174">γ_h</text>
 
-  <path class="transmission"
-        d="M270 287 C315 280 322 365 362 352"/>
+  <path class="pink" d="M705 245 V208"/>
+  <text class="p" x="716" y="232">μ_h</text>
 
-  <!-- TRANSISI VERTIKAL DI TENGAH -->
-  <path class="pinkflow" d="M402 95 V70"/>
-  <text class="param" x="409" y="82">μₕ</text>
+  <!-- Baris 2 dan 3 -->
+  <path class="pink" d="M705 293 V330"/>
+  <text class="p" x="716" y="314">γ_h</text>
 
-  <path class="pinkflow" d="M402 129 V172"/>
-  <text class="param" x="410" y="153">γₕ</text>
+  <path class="pink" d="M705 385 V348"/>
+  <text class="p" x="716" y="373">μ_h</text>
 
-  <path class="pinkflow" d="M402 209 V252"/>
-  <text class="param" x="410" y="233">μₕ</text>
+  <!-- Baris 3 dan 4 -->
+  <path class="pink" d="M705 433 V470"/>
+  <text class="p" x="716" y="454">γ_h</text>
 
-  <path class="pinkflow" d="M402 289 V332"/>
-  <text class="param" x="410" y="313">γₕ</text>
+  <path class="pink" d="M705 525 V488"/>
+  <text class="p" x="716" y="513">μ_h</text>
 
-  <path class="pinkflow" d="M402 369 V405"/>
-  <text class="param" x="410" y="393">μₕ</text>
+  <!-- PANAH HORIZONTAL TENGAH KE KANAN -->
+  <path class="pink" d="M490 129 H652"/>
+  <text class="p" x="550" y="116">σ_fh</text>
 
-  <!-- TRANSMISI KE KOMPATEMEN PEMULIHAN -->
-  <path class="pinkflow" d="M440 112 H532"/>
-  <text class="param" x="478" y="101">σₕ</text>
+  <path class="pink" d="M490 269 H652"/>
+  <text class="p" x="550" y="256">σ_fh</text>
 
-  <path class="pinkflow" d="M440 192 H532"/>
-  <text class="param" x="478" y="181">σₕ</text>
+  <path class="pink" d="M490 409 H652"/>
+  <text class="p" x="550" y="396">σ_vh</text>
 
-  <path class="pinkflow" d="M440 272 H532"/>
-  <text class="param" x="478" y="261">σᵥₕ</text>
+  <path class="pink" d="M490 549 H652"/>
+  <text class="p" x="550" y="536">σ_vh</text>
 
-  <path class="pinkflow" d="M440 352 H532"/>
-  <text class="param" x="478" y="341">σᵥₕ</text>
+  <!-- KELUARAN KOLOM KANAN -->
+  <path class="pink" d="M755 129 H830"/>
+  <text class="p" x="782" y="116">μ_h</text>
 
-  <!-- ALIRAN VERTIKAL DI KANAN -->
-  <path class="pinkflow" d="M572 95 V70"/>
-  <text class="param" x="580" y="82">μₕ</text>
+  <path class="pink" d="M755 269 H830"/>
+  <text class="p" x="782" y="256">μ_h</text>
 
-  <path class="pinkflow" d="M572 129 V172"/>
-  <text class="param" x="580" y="153">γₕ</text>
+  <path class="pink" d="M755 409 H830"/>
+  <text class="p" x="782" y="396">μ_h</text>
 
-  <path class="pinkflow" d="M572 209 V252"/>
-  <text class="param" x="580" y="233">γₕ</text>
+  <path class="pink" d="M755 549 H830"/>
+  <text class="p" x="782" y="536">μ_h</text>
 
-  <path class="pinkflow" d="M572 289 V332"/>
-  <text class="param" x="580" y="313">γₕ</text>
+  <!-- TRANSMISI PUTUS-PUTUS ANTARKOLOM -->
+  <path class="dpink"
+        d="M245 314 C300 314 325 129 387 129"/>
+  <text class="p" x="300" y="215">bλ_fh</text>
 
-  <path class="pinkflow" d="M572 369 V405"/>
-  <text class="param" x="580" y="393">μₕ</text>
+  <path class="dblue"
+        d="M245 174 C305 174 325 269 387 269"/>
+  <text class="p" x="300" y="223">bλ_vh</text>
 
-  <!-- KELUARAN KANAN -->
-  <path class="pinkflow" d="M610 112 H670"/>
-  <text class="param" x="625" y="101">μₕ</text>
+  <path class="dblue"
+        d="M245 174 C310 205 325 409 387 409"/>
+  <text class="p" x="310" y="329">bλ_vh</text>
 
-  <path class="pinkflow" d="M610 192 H670"/>
-  <text class="param" x="625" y="181">μₕ</text>
+  <path class="dpink"
+        d="M245 314 C305 355 325 549 387 549"/>
+  <text class="p" x="300" y="467">bλ_vh</text>
 
-  <path class="pinkflow" d="M610 272 H670"/>
-  <text class="param" x="625" y="261">μₕ</text>
+  <path class="dpink"
+        d="M245 314 C300 290 325 269 387 269"/>
 
-  <path class="pinkflow" d="M610 352 H670"/>
-  <text class="param" x="625" y="341">μₕ</text>
+  <path class="dblue"
+        d="M245 454 C305 420 325 409 387 409"/>
+
+  <path class="dblue"
+        d="M245 454 C305 480 325 549 387 549"/>
+
+  <path class="dpink"
+        d="M245 314 C305 255 325 174 387 129"/>
 
 </svg>
