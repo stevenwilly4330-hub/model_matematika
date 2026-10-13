@@ -1,288 +1,298 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1100" height="650" viewBox="0 0 1100 650">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagram Model Matematika</title>
 
-  <rect width="1100" height="650" fill="#ffffff"/>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background: white;
+    font-family: "Times New Roman", serif;
+  }
 
-  <defs>
-    <marker id="blueArrow" markerWidth="8" markerHeight="8"
-            refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#168fe0"/>
-    </marker>
-    <marker id="pinkArrow" markerWidth="8" markerHeight="8"
-            refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#c43b9b"/>
-    </marker>
+  .diagram {
+    width: 100%;
+    overflow-x: auto;
+  }
 
-    <style>
-      .bluebox {
-        fill: #c8e6fa;
-        stroke: #168fe0;
-        stroke-width: 1.6;
-      }
-      .pinkbox {
-        fill: #f8c8e8;
-        stroke: #c43b9b;
-        stroke-width: 1.6;
-      }
-      .blue {
-        fill: none;
-        stroke: #168fe0;
-        stroke-width: 2;
-        marker-end: url(#blueArrow);
-      }
-      .pink {
-        fill: none;
-        stroke: #c43b9b;
-        stroke-width: 2;
-        marker-end: url(#pinkArrow);
-      }
-      .dblue {
-        fill: none;
-        stroke: #168fe0;
-        stroke-width: 2;
-        stroke-dasharray: 7 5;
-        marker-end: url(#blueArrow);
-      }
-      .dpink {
-        fill: none;
-        stroke: #c43b9b;
-        stroke-width: 2;
-        stroke-dasharray: 7 5;
-        marker-end: url(#pinkArrow);
-      }
-      .state {
-        font-family: "Times New Roman", serif;
-        font-size: 21px;
-        font-style: italic;
-        text-anchor: middle;
-        dominant-baseline: middle;
-        fill: #17243b;
-      }
-      .param {
-        font-family: "Times New Roman", serif;
-        font-size: 16px;
-        font-style: italic;
-        fill: #222222;
-      }
-    </style>
-  </defs>
+  svg {
+    display: block;
+    width: 100%;
+    min-width: 850px;
+    height: auto;
+  }
 
-  <!-- ================================= -->
-  <!-- KOLOM KIRI                       -->
-  <!-- ================================= -->
+  .blue-box {
+    fill: #d9efff;
+    stroke: #087dcc;
+    stroke-width: 2.5;
+  }
 
-  <rect class="bluebox" x="125" y="125" width="100" height="48" rx="5"/>
-  <text class="state" x="175" y="149">I_fm</text>
+  .pink-box {
+    fill: #f9d9f1;
+    stroke: #c00091;
+    stroke-width: 2.5;
+  }
 
-  <rect class="bluebox" x="125" y="285" width="100" height="48" rx="5"/>
-  <text class="state" x="175" y="309">S_m</text>
+  .blue-line {
+    fill: none;
+    stroke: #0784df;
+    stroke-width: 2.5;
+  }
 
-  <rect class="bluebox" x="125" y="445" width="100" height="48" rx="5"/>
-  <text class="state" x="175" y="469">I_vm</text>
+  .pink-line {
+    fill: none;
+    stroke: #c00091;
+    stroke-width: 2.5;
+  }
 
-  <!-- Aliran vertikal kiri -->
-  <path class="blue" d="M175 125 V75"/>
-  <text class="param" x="187" y="96">μ_m</text>
+  .dashed-blue {
+    fill: none;
+    stroke: #0784df;
+    stroke-width: 2;
+    stroke-dasharray: 7 6;
+  }
 
-  <path class="blue" d="M175 285 V175"/>
-  <text class="param" x="187" y="230">bλ_vm</text>
+  .dashed-pink {
+    fill: none;
+    stroke: #ed2aa9;
+    stroke-width: 2;
+    stroke-dasharray: 7 6;
+  }
 
-  <path class="blue" d="M175 333 V445"/>
-  <text class="param" x="187" y="395">bλ_fm</text>
+  .state {
+    font-size: 29px;
+    font-style: italic;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
 
-  <path class="blue" d="M175 493 V545"/>
-  <text class="param" x="187" y="526">μ_m</text>
+  .label {
+    font-size: 21px;
+    font-style: italic;
+  }
+</style>
+</head>
 
-  <!-- Masuk ke S_m -->
-  <path class="blue" d="M42 309 H121"/>
-  <text class="param" x="58" y="296">τ_m</text>
+<body>
+<div class="diagram">
+<svg viewBox="0 0 1100 650"
+     xmlns="http://www.w3.org/2000/svg">
 
-  <!-- ================================= -->
-  <!-- KOLOM TENGAH                     -->
-  <!-- ================================= -->
+<defs>
+  <marker id="blueArrow" markerWidth="8" markerHeight="8"
+          refX="6" refY="3" orient="auto">
+    <path d="M0,0 L6,3 L0,6 Z" fill="#0784df"/>
+  </marker>
 
-  <rect class="pinkbox" x="405" y="85" width="105" height="48" rx="5"/>
-  <text class="state" x="457" y="109">I_fhc</text>
+  <marker id="pinkArrow" markerWidth="8" markerHeight="8"
+          refX="6" refY="3" orient="auto">
+    <path d="M0,0 L6,3 L0,6 Z" fill="#c00091"/>
+  </marker>
+</defs>
 
-  <rect class="pinkbox" x="405" y="225" width="105" height="48" rx="5"/>
-  <text class="state" x="457" y="249">I_fha</text>
+<!-- =========================
+     KOTAK BAGIAN KIRI
+     ========================= -->
 
-  <rect class="pinkbox" x="405" y="365" width="105" height="48" rx="5"/>
-  <text class="state" x="457" y="389">I_vhc</text>
+<rect class="blue-box" x="85" y="125" width="135" height="62" rx="8"/>
+<text class="state" x="152" y="156">I<tspan font-size="18" dy="8">fm</tspan></text>
 
-  <rect class="pinkbox" x="405" y="505" width="105" height="48" rx="5"/>
-  <text class="state" x="457" y="529">I_vha</text>
+<rect class="blue-box" x="85" y="285" width="135" height="62" rx="8"/>
+<text class="state" x="152" y="316">S<tspan font-size="18" dy="8">m</tspan></text>
 
-  <!-- ================================= -->
-  <!-- KOLOM KANAN                      -->
-  <!-- ================================= -->
+<rect class="blue-box" x="85" y="445" width="135" height="62" rx="8"/>
+<text class="state" x="152" y="476">I<tspan font-size="18" dy="8">vm</tspan></text>
 
-  <rect class="pinkbox" x="700" y="85" width="105" height="48" rx="5"/>
-  <text class="state" x="752" y="109">R_hc</text>
+<!-- Garis utama kiri -->
+<path class="blue-line" d="M152 125 V55"
+      marker-end="url(#blueArrow)"/>
+<text class="label" x="172" y="75">μ<tspan font-size="14">m</tspan></text>
 
-  <rect class="pinkbox" x="700" y="225" width="105" height="48" rx="5"/>
-  <text class="state" x="752" y="249">R_ha</text>
+<path class="blue-line" d="M152 187 V285"
+      marker-start="url(#blueArrow)"
+      marker-end="url(#blueArrow)"/>
+<text class="label" x="165" y="240">bλ<tspan font-size="14">vm</tspan></text>
 
-  <rect class="pinkbox" x="700" y="365" width="105" height="48" rx="5"/>
-  <text class="state" x="752" y="389">R_vc</text>
+<path class="blue-line" d="M152 347 V445"
+      marker-end="url(#blueArrow)"/>
+<text class="label" x="165" y="397">bλ<tspan font-size="14">fm</tspan></text>
 
-  <rect class="pinkbox" x="700" y="505" width="105" height="48" rx="5"/>
-  <text class="state" x="752" y="529">R_va</text>
+<path class="blue-line" d="M152 507 V585"
+      marker-end="url(#blueArrow)"/>
+<text class="label" x="172" y="545">μ<tspan font-size="14">m</tspan></text>
 
-  <!-- ================================= -->
-  <!-- TRANSMISI DIAGONAL PUTUS-PUTUS   -->
-  <!-- PANAH BIRU: ARAH BOLAK-BALIK     -->
-  <!-- ================================= -->
+<path class="blue-line" d="M10 316 H85"
+      marker-end="url(#blueArrow)"/>
+<text class="label" x="25" y="298">τ<tspan font-size="14">m</tspan></text>
 
-  <!-- I_fm menuju I_fha -->
-  <path class="dblue"
-        d="M225 139 C285 150 330 205 402 241"/>
+<!-- =========================
+     KOTAK BAGIAN TENGAH
+     ========================= -->
 
-  <!-- I_fha menuju I_fm -->
-  <path class="dblue"
-        d="M402 258 C330 230 285 180 225 157"/>
+<rect class="pink-box" x="425" y="90" width="145" height="62" rx="8"/>
+<text class="state" x="497" y="121">I<tspan font-size="18" dy="8">fhc</tspan></text>
 
-  <!-- I_fm menuju I_vhc -->
-  <path class="dblue"
-        d="M225 145 C300 205 330 330 402 379"/>
+<rect class="pink-box" x="425" y="235" width="145" height="62" rx="8"/>
+<text class="state" x="497" y="266">I<tspan font-size="18" dy="8">fha</tspan></text>
 
-  <!-- I_vhc menuju I_fm -->
-  <path class="dblue"
-        d="M402 395 C325 355 295 240 225 163"/>
+<rect class="pink-box" x="425" y="380" width="145" height="62" rx="8"/>
+<text class="state" x="497" y="411">I<tspan font-size="18" dy="8">vhc</tspan></text>
 
-  <!-- I_vm menuju I_vhc -->
-  <path class="dblue"
-        d="M225 462 C290 440 335 410 402 389"/>
+<rect class="pink-box" x="425" y="525" width="145" height="62" rx="8"/>
+<text class="state" x="497" y="556">I<tspan font-size="18" dy="8">vha</tspan></text>
 
-  <!-- I_vhc menuju I_vm -->
-  <path class="dblue"
-        d="M402 402 C330 438 285 475 225 480"/>
+<!-- Transisi vertikal tengah -->
+<path class="pink-line" d="M490 152 V235"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="455" y="198">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_vm menuju I_fha -->
-  <path class="dblue"
-        d="M225 458 C295 400 330 300 402 254"/>
+<path class="pink-line" d="M515 235 V152"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="525" y="198">μ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_fha menuju I_vm -->
-  <path class="dblue"
-        d="M402 266 C335 315 290 420 225 474"/>
+<path class="pink-line" d="M490 297 V380"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="455" y="344">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- Label transmisi biru -->
-  <text class="param" x="285" y="180">bλ_vm</text>
-  <text class="param" x="300" y="290">bλ_vh</text>
-  <text class="param" x="286" y="425">bλ_fm</text>
+<path class="pink-line" d="M515 380 V297"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="525" y="344">μ<tspan font-size="14">h</tspan></text>
 
-  <!-- ================================= -->
-  <!-- TRANSMISI DIAGONAL PUTUS-PUTUS   -->
-  <!-- PANAH MERAH MUDA                 -->
-  <!-- ================================= -->
+<path class="pink-line" d="M490 442 V525"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="455" y="489">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- S_m menuju I_fhc -->
-  <path class="dpink"
-        d="M225 300 C295 255 340 145 402 109"/>
+<path class="pink-line" d="M515 525 V442"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="525" y="489">μ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_fhc menuju S_m -->
-  <path class="dpink"
-        d="M402 125 C340 165 295 275 225 316"/>
+<!-- =========================
+     KOTAK BAGIAN KANAN
+     ========================= -->
 
-  <!-- S_m menuju I_vha -->
-  <path class="dpink"
-        d="M225 315 C300 365 340 475 402 521"/>
+<rect class="pink-box" x="770" y="90" width="140" height="62" rx="8"/>
+<text class="state" x="840" y="121">R<tspan font-size="18" dy="8">hc</tspan></text>
 
-  <!-- I_vha menuju S_m -->
-  <path class="dpink"
-        d="M402 535 C335 490 290 375 225 329"/>
+<rect class="pink-box" x="770" y="235" width="140" height="62" rx="8"/>
+<text class="state" x="840" y="266">R<tspan font-size="18" dy="8">ha</tspan></text>
 
-  <!-- I_vm menuju I_fhc -->
-  <path class="dpink"
-        d="M225 455 C295 365 335 195 402 116"/>
+<rect class="pink-box" x="770" y="380" width="140" height="62" rx="8"/>
+<text class="state" x="840" y="411">R<tspan font-size="18" dy="8">vc</tspan></text>
 
-  <!-- I_fhc menuju I_vm -->
-  <path class="dpink"
-        d="M402 131 C335 220 295 390 225 482"/>
+<rect class="pink-box" x="770" y="525" width="140" height="62" rx="8"/>
+<text class="state" x="840" y="556">R<tspan font-size="18" dy="8">va</tspan></text>
 
-  <!-- Label transmisi merah muda -->
-  <text class="param" x="290" y="230">bλ_fh</text>
-  <text class="param" x="290" y="455">bλ_vh</text>
+<!-- Transisi menuju R -->
+<path class="pink-line" d="M570 121 H770"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="645" y="105">σ<tspan font-size="14">fh</tspan></text>
 
-  <!-- ================================= -->
-  <!-- PANAH VERTIKAL KOLOM TENGAH       -->
-  <!-- ================================= -->
+<path class="pink-line" d="M570 266 H770"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="645" y="250">σ<tspan font-size="14">fh</tspan></text>
 
-  <!-- I_fhc ke bawah menuju I_fha -->
-  <path class="pink" d="M457 133 V177"/>
-  <text class="param" x="468" y="155">γ_h</text>
+<path class="pink-line" d="M570 411 H770"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="645" y="395">σ<tspan font-size="14">vh</tspan></text>
 
-  <!-- I_fha ke atas menuju I_fhc -->
-  <path class="pink" d="M457 225 V181"/>
-  <text class="param" x="468" y="214">μ_h</text>
+<path class="pink-line" d="M570 556 H770"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="645" y="540">σ<tspan font-size="14">vh</tspan></text>
 
-  <!-- I_fha ke bawah menuju I_vhc -->
-  <path class="pink" d="M457 273 V317"/>
-  <text class="param" x="468" y="295">γ_h</text>
+<!-- Transisi vertikal bagian R -->
+<path class="pink-line" d="M840 152 V235"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="855" y="198">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_vhc ke atas menuju I_fha -->
-  <path class="pink" d="M457 365 V321"/>
-  <text class="param" x="468" y="354">μ_h</text>
+<path class="pink-line" d="M840 297 V380"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="810" y="344">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_vhc ke bawah menuju I_vha -->
-  <path class="pink" d="M457 413 V457"/>
-  <text class="param" x="468" y="435">γ_h</text>
+<path class="pink-line" d="M865 380 V297"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="875" y="344">μ<tspan font-size="14">h</tspan></text>
 
-  <!-- I_vha ke atas menuju I_vhc -->
-  <path class="pink" d="M457 505 V461"/>
-  <text class="param" x="468" y="494">μ_h</text>
+<path class="pink-line" d="M840 442 V525"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="810" y="489">γ<tspan font-size="14">h</tspan></text>
 
-  <!-- ================================= -->
-  <!-- PANAH HORIZONTAL KE KANAN         -->
-  <!-- ================================= -->
+<path class="pink-line" d="M865 525 V442"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="875" y="489">μ<tspan font-size="14">h</tspan></text>
 
-  <path class="pink" d="M510 109 H697"/>
-  <text class="param" x="565" y="96">σ_fh</text>
+<!-- Panah keluar kanan -->
+<path class="pink-line" d="M910 121 H1015"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="955" y="105">μ<tspan font-size="14">h</tspan></text>
 
-  <path class="pink" d="M510 249 H697"/>
-  <text class="param" x="565" y="236">σ_fh</text>
+<path class="pink-line" d="M910 266 H1015"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="955" y="250">μ<tspan font-size="14">h</tspan></text>
 
-  <path class="pink" d="M510 389 H697"/>
-  <text class="param" x="565" y="376">σ_vh</text>
+<path class="pink-line" d="M910 411 H1015"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="955" y="395">μ<tspan font-size="14">h</tspan></text>
 
-  <path class="pink" d="M510 529 H697"/>
-  <text class="param" x="565" y="516">σ_vh</text>
+<path class="pink-line" d="M910 556 H1015"
+      marker-end="url(#pinkArrow)"/>
+<text class="label" x="955" y="540">μ<tspan font-size="14">h</tspan></text>
 
-  <!-- ================================= -->
-  <!-- KOLOM KANAN: R_hc HANYA KE BAWAH -->
-  <!-- ================================= -->
 
-  <path class="pink" d="M752 133 V220"/>
-  <text class="param" x="764" y="177">γ_h</text>
+<!-- ==================================================
+     TEPAT 7 GARIS PUTUS-PUTUS DIAGONAL
+     Garis putus-putus dipisahkan dari garis utama.
+     ================================================== -->
 
-  <!-- R_ha dan R_vc: arah berlawanan -->
-  <path class="pink" d="M752 273 V317"/>
-  <text class="param" x="764" y="295">γ_h</text>
+<!-- 1. Biru: panah bolak-balik -->
+<path class="dashed-blue"
+      d="M220 145 Q315 165 425 260"
+      marker-start="url(#blueArrow)"
+      marker-end="url(#blueArrow)"/>
 
-  <path class="pink" d="M752 365 V321"/>
-  <text class="param" x="764" y="354">μ_h</text>
+<!-- 2. Biru: satu arah -->
+<path class="dashed-blue"
+      d="M220 165 Q320 230 425 400"
+      marker-end="url(#blueArrow)"/>
 
-  <!-- R_vc dan R_va: arah berlawanan -->
-  <path class="pink" d="M752 413 V457"/>
-  <text class="param" x="764" y="435">γ_h</text>
+<!-- 3. Biru: panah bolak-balik -->
+<path class="dashed-blue"
+      d="M220 310 Q320 340 425 405"
+      marker-start="url(#blueArrow)"
+      marker-end="url(#blueArrow)"/>
 
-  <path class="pink" d="M752 505 V461"/>
-  <text class="param" x="764" y="494">μ_h</text>
+<!-- 4. Biru: satu arah -->
+<path class="dashed-blue"
+      d="M220 475 Q325 500 425 555"
+      marker-end="url(#blueArrow)"/>
 
-  <!-- ================================= -->
-  <!-- KELUARAN KOLOM KANAN              -->
-  <!-- ================================= -->
+<!-- 5. Pink: panah bolak-balik -->
+<path class="dashed-pink"
+      d="M220 310 Q320 190 425 120"
+      marker-start="url(#pinkArrow)"
+      marker-end="url(#pinkArrow)"/>
 
-  <path class="pink" d="M805 109 H895"/>
-  <text class="param" x="838" y="96">μ_h</text>
+<!-- 6. Pink: satu arah -->
+<path class="dashed-pink"
+      d="M220 475 Q320 345 425 265"
+      marker-end="url(#pinkArrow)"/>
 
-  <path class="pink" d="M805 249 H895"/>
-  <text class="param" x="838" y="236">μ_h</text>
+<!-- 7. Pink: panah bolak-balik -->
+<path class="dashed-pink"
+      d="M220 310 Q320 440 425 555"
+      marker-start="url(#pinkArrow)"
+      marker-end="url(#pinkArrow)"/>
 
-  <path class="pink" d="M805 389 H895"/>
-  <text class="param" x="838" y="376">μ_h</text>
-
-  <path class="pink" d="M805 529 H895"/>
-  <text class="param" x="838" y="516">μ_h</text>
+<!-- Label garis putus-putus -->
+<text class="label" x="300" y="215">bλ<tspan font-size="14">vh</tspan></text>
+<text class="label" x="310" y="365">bλ<tspan font-size="14">vh</tspan></text>
+<text class="label" x="300" y="535">bλ<tspan font-size="14">vh</tspan></text>
+<text class="label" x="300" y="135">bλ<tspan font-size="14">fh</tspan></text>
 
 </svg>
+</div>
+</body>
+</html>
