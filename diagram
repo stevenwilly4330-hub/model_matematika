@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650"
+     viewBox="0 0 1100 650">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9"
+            refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#222"/>
+    </marker>
+    <style>
+      .node {
+        fill: #bdbdbd;
+        stroke: #888;
+        stroke-width: 1;
+      }
+      .flow {
+        fill: none;
+        stroke: #222;
+        stroke-width: 2;
+        marker-end: url(#arrow);
+      }
+      .transmission {
+        fill: none;
+        stroke: #555;
+        stroke-width: 2;
+        stroke-dasharray: 10 7;
+        marker-end: url(#arrow);
+      }
+      .label {
+        font-family: "Times New Roman", serif;
+        font-size: 19px;
+        fill: #111;
+      }
+      .state {
+        font-family: "Times New Roman", serif;
+        font-size: 27px;
+        font-style: italic;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        fill: #111;
+      }
+    </style>
+  </defs>
+
+  <!-- Kompartemen nyamuk -->
+  <rect class="node" x="100" y="145" width="110" height="55"/>
+  <rect class="node" x="100" y="285" width="110" height="55"/>
+  <rect class="node" x="100" y="425" width="110" height="55"/>
+
+  <text class="state" x="155" y="173">Iₘ</text>
+  <text class="state" x="155" y="313">Sₘ</text>
+  <text class="state" x="155" y="453">Iᵥₘ</text>
+
+  <!-- Kompartemen manusia -->
+  <rect class="node" x="420" y="145" width="110" height="55"/>
+  <rect class="node" x="420" y="285" width="110" height="55"/>
+  <rect class="node" x="420" y="425" width="110" height="55"/>
+
+  <text class="state" x="475" y="173">Iₕₘ</text>
+  <text class="state" x="475" y="313">Sₕ</text>
+  <text class="state" x="475" y="453">Iᵥₕ</text>
+
+  <!-- Kompartemen pemulihan -->
+  <rect class="node" x="770" y="285" width="110" height="55"/>
+  <text class="state" x="825" y="313">Rₕ</text>
+
+  <!-- Aliran masuk dan keluar S_m -->
+  <path class="flow" d="M25 313 H98"/>
+  <text class="label" x="42" y="294">τₘ</text>
+
+  <path class="flow" d="M210 313 H290"/>
+  <text class="label" x="225" y="300">μₘ</text>
+
+  <!-- S_m ke I_m dan I_vm -->
+  <path class="flow" d="M155 285 V202"/>
+  <text class="label" x="172" y="247">bλₘ</text>
+
+  <path class="flow" d="M155 340 V423"/>
+  <text class="label" x="172" y="390">bλᵥₘ</text>
+
+  <!-- Aliran kompartemen manusia -->
+  <path class="flow" d="M475 285 V202"/>
+  <text class="label" x="492" y="247">bλₕ</text>
+
+  <path class="flow" d="M475 340 V423"/>
+  <text class="label" x="492" y="390">bλᵥₕ</text>
+
+  <path class="flow" d="M345 313 H418"/>
+  <text class="label" x="350" y="294">τₕ</text>
+
+  <path class="flow" d="M530 313 H770"/>
+  <text class="label" x="625" y="297">dₕ</text>
+
+  <!-- Keluaran kompartemen -->
+  <path class="flow" d="M155 145 V85"/>
+  <text class="label" x="170" y="115">μₘ</text>
+
+  <path class="flow" d="M155 480 V535"/>
+  <text class="label" x="170" y="520">μₘ</text>
+
+  <path class="flow" d="M475 145 V85"/>
+  <text class="label" x="490" y="115">μₕ</text>
+
+  <path class="flow" d="M475 480 V535"/>
+  <text class="label" x="490" y="520">μᵥₕ</text>
+
+  <path class="flow" d="M530 173 H650"/>
+  <text class="label" x="550" y="157">μₕₘ</text>
+
+  <path class="flow" d="M530 453 H650"/>
+  <text class="label" x="550" y="438">μᵥₕ</text>
+
+  <path class="flow" d="M880 313 H970"/>
+  <text class="label" x="900" y="295">μₕ</text>
+
+  <!-- Transmisi silang putus-putus -->
+  <path class="transmission"
+        d="M210 173 C285 173 340 270 420 313"/>
+  <path class="transmission"
+        d="M210 453 C290 453 345 355 420 313"/>
+
+  <path class="transmission"
+        d="M420 173 C350 173 285 255 210 313"/>
+  <path class="transmission"
+        d="M420 453 C345 453 280 365 210 313"/>
+
+  <!-- Transmisi antar kompartemen infeksi -->
+  <path class="transmission"
+        d="M210 173 C285 220 345 230 420 173"/>
+  <path class="transmission"
+        d="M210 453 C285 405 345 395 420 453"/>
+
+  <!-- Pemulihan manusia -->
+  <path class="flow" d="M475 200 C555 200 640 313 770 313"/>
+  <text class="label" x="625" y="240">αₕₘ</text>
+
+  <path class="flow" d="M530 453 C625 453 680 345 770 313"/>
+  <text class="label" x="645" y="410">αᵥₕ</text>
+
+  <!-- Judul -->
+  <text class="label" x="550" y="600"
+        text-anchor="middle" font-weight="bold">
+    Fig. 1. Schematics model diagram
+  </text>
+</svg>
