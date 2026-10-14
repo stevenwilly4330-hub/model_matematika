@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 940 620" width="940" height="620">
 <title>Diagram kompartemen model nyamuk dan manusia</title>
-<defs><marker id="mb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1E7BD6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0L10 5L0 10z" fill="#C2189A"/></marker></defs>
+<defs><marker id="mb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1E7BD6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0L10 5L0 10z" fill="#C2189A"/></marker><marker id="mq" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1L10 5L0 9z" fill="#C2189A"/></marker></defs>
 <rect x="0" y="-20" width="940" height="620" fill="#ffffff"/>
 <g font-family="Times New Roman, serif" font-style="italic" fill="#111">
 <rect x="80" y="60" width="120" height="48" rx="5" fill="#BBDDFB" stroke="#1E7BD6" stroke-width="1.3"/><text x="128.7" y="92">I</text><text x="137.3" y="98" font-size="15">fm</text>
 <rect x="80" y="210" width="120" height="48" rx="5" fill="#BBDDFB" stroke="#1E7BD6" stroke-width="1.3"/><text x="129.7" y="242">S</text><text x="143.8" y="248" font-size="15">m</text>
 <rect x="80" y="366" width="120" height="48" rx="5" fill="#BBDDFB" stroke="#1E7BD6" stroke-width="1.3"/><text x="128.7" y="398">I</text><text x="137.3" y="404" font-size="15">vm</text>
-<rect x="386" y="60" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="430.9" y="92">I</text><text x="439.6" y="98" font-size="15">fhc</text>
-<rect x="386" y="204" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="430.9" y="236">I</text><text x="439.6" y="242" font-size="15">fha</text>
-<rect x="386" y="348" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="430.9" y="380">I</text><text x="439.6" y="386" font-size="15">vhc</text>
-<rect x="386" y="492" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="430.9" y="524">I</text><text x="439.6" y="530" font-size="15">vha</text>
-<rect x="656" y="60" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="701.9" y="92">R</text><text x="716.1" y="98" font-size="15">hc</text>
-<rect x="656" y="204" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="701.9" y="236">R</text><text x="716.1" y="242" font-size="15">ha</text>
-<rect x="656" y="348" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="701.9" y="380">R</text><text x="716.1" y="386" font-size="15">vc</text>
-<rect x="656" y="492" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.3"/><text x="701.9" y="524">R</text><text x="716.1" y="530" font-size="15">va</text>
+<rect x="386" y="60" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="430.9" y="92">I</text><text x="439.6" y="98" font-size="15">fhc</text>
+<rect x="386" y="204" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="430.9" y="236">I</text><text x="439.6" y="242" font-size="15">fha</text>
+<rect x="386" y="348" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="430.9" y="380">I</text><text x="439.6" y="386" font-size="15">vhc</text>
+<rect x="386" y="492" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="430.9" y="524">I</text><text x="439.6" y="530" font-size="15">vha</text>
+<rect x="656" y="60" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="701.9" y="92">R</text><text x="716.1" y="98" font-size="15">hc</text>
+<rect x="656" y="204" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="701.9" y="236">R</text><text x="716.1" y="242" font-size="15">ha</text>
+<rect x="656" y="348" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="701.9" y="380">R</text><text x="716.1" y="386" font-size="15">vc</text>
+<rect x="656" y="492" width="120" height="48" rx="5" fill="#FBB6E0" stroke="#C2189A" stroke-width="1.1"/><text x="701.9" y="524">R</text><text x="716.1" y="530" font-size="15">va</text>
 </g>
 <path d="M26 234 L78 234" fill="none" stroke="#1E7BD6" stroke-width="2.2" marker-end="url(#mb)"/>
 <path d="M140 210 L140 110" fill="none" stroke="#1E7BD6" stroke-width="2.2" marker-end="url(#mb)"/>
@@ -25,29 +25,10 @@
 <path d="M386 200 C 300 200, 290 78, 202 78" fill="none" stroke="#1E7BD6" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mb)"/>
 <path d="M200 228 C 290 228, 300 364, 384 364" fill="none" stroke="#1E7BD6" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mb)"/>
 <path d="M386 380 C 300 380, 290 396, 202 396" fill="none" stroke="#1E7BD6" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mb)"/>
-<path d="M200 228 C 250 170, 300 78, 384 78" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
-<path d="M200 382 C 300 382, 290 234, 384 234" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
-<path d="M200 240 C 330 240, 250 510, 384 510" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
-<path d="M506 84 L654 84" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M776 84 L888 84" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M506 228 L654 228" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M776 228 L888 228" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M506 372 L654 372" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M776 372 L888 372" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M506 516 L654 516" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M776 516 L888 516" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 108 L446 204" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 204 L446 174" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 396 L446 492" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 492 L446 462" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 60 L446 6" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M446 348 L446 318" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 108 L716 204" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 204 L716 174" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 396 L716 492" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 492 L716 462" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 60 L716 6" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
-<path d="M716 348 L716 318" fill="none" stroke="#C2189A" stroke-width="2.2" marker-end="url(#mp)"/>
+<path d="M200 224 C 260 224, 300 78, 384 78" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
+<path d="M200 246 C 290 246, 290 516, 384 516" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
+<path d="M200 376 C 290 376, 290 236, 384 236" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
+<path d="M200 404 C 290 404, 290 392, 384 392" fill="none" stroke="#C2189A" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#mp)"/>
 <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#111">
 <text x="150.0" y="163">b&#955;</text><text x="166.4" y="166" font-size="10">vm</text>
 <text x="150.0" y="316">b&#955;</text><text x="166.4" y="319" font-size="10">fm</text>
@@ -59,26 +40,46 @@
 <text x="270.8" y="486">b&#955;</text><text x="287.2" y="489" font-size="10">vh</text>
 </g>
 <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#1E7BD6"><text x="44.8" y="222">&#964;</text><text x="54.2" y="225" font-size="10">m</text></g>
-<g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#C2189A">
-<text x="560.8" y="76">&#963;</text><text x="570.2" y="79" font-size="10">fh</text>
-<text x="858.8" y="76">&#956;</text><text x="868.2" y="79" font-size="10">h</text>
-<text x="560.8" y="220">&#963;</text><text x="570.2" y="223" font-size="10">fh</text>
-<text x="858.8" y="220">&#956;</text><text x="868.2" y="223" font-size="10">h</text>
-<text x="560.8" y="364">&#963;</text><text x="570.2" y="367" font-size="10">vh</text>
-<text x="858.8" y="364">&#956;</text><text x="868.2" y="367" font-size="10">h</text>
-<text x="560.8" y="508">&#963;</text><text x="570.2" y="511" font-size="10">vh</text>
-<text x="858.8" y="508">&#956;</text><text x="868.2" y="511" font-size="10">h</text>
-<text x="454.0" y="134">&#947;</text><text x="463.4" y="137" font-size="10">h</text>
-<text x="454.0" y="186">&#956;</text><text x="463.4" y="189" font-size="10">h</text>
-<text x="454.0" y="422">&#947;</text><text x="463.4" y="425" font-size="10">h</text>
-<text x="454.0" y="474">&#956;</text><text x="463.4" y="477" font-size="10">h</text>
-<text x="454.0" y="12">&#956;</text><text x="463.4" y="15" font-size="10">h</text>
-<text x="454.0" y="330">&#956;</text><text x="463.4" y="333" font-size="10">h</text>
-<text x="724.0" y="134">&#947;</text><text x="733.4" y="137" font-size="10">h</text>
-<text x="724.0" y="186">&#956;</text><text x="733.4" y="189" font-size="10">h</text>
-<text x="724.0" y="422">&#947;</text><text x="733.4" y="425" font-size="10">h</text>
-<text x="724.0" y="474">&#956;</text><text x="733.4" y="477" font-size="10">h</text>
-<text x="724.0" y="12">&#956;</text><text x="733.4" y="15" font-size="10">h</text>
-<text x="724.0" y="330">&#956;</text><text x="733.4" y="333" font-size="10">h</text>
+<path d="M506 84 L652 84" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M776 84 L886 84" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M506 228 L652 228" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M776 228 L886 228" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M506 372 L652 372" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M776 372 L886 372" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M506 516 L652 516" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M776 516 L886 516" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M446 108 L446 202" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M446 396 L446 490" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M464 60 L464 6" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M464 204 L464 176" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M464 348 L464 320" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M464 492 L464 464" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M716 108 L716 202" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M716 396 L716 490" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M734 60 L734 6" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M734 204 L734 176" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M734 348 L734 320" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<path d="M734 492 L734 464" fill="none" stroke="#C2189A" stroke-width="1.3" marker-end="url(#mq)"/>
+<g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#333">
+<text x="570.8" y="76">&#963;</text><text x="580.2" y="79" font-size="10">fh</text>
+<text x="852.0" y="76">&#956;</text><text x="861.4" y="79" font-size="10">h</text>
+<text x="570.8" y="220">&#963;</text><text x="580.2" y="223" font-size="10">fh</text>
+<text x="852.0" y="220">&#956;</text><text x="861.4" y="223" font-size="10">h</text>
+<text x="570.8" y="364">&#963;</text><text x="580.2" y="367" font-size="10">vh</text>
+<text x="852.0" y="364">&#956;</text><text x="861.4" y="367" font-size="10">h</text>
+<text x="570.8" y="508">&#963;</text><text x="580.2" y="511" font-size="10">vh</text>
+<text x="852.0" y="508">&#956;</text><text x="861.4" y="511" font-size="10">h</text>
+<text x="452.0" y="136">&#947;</text><text x="461.4" y="139" font-size="10">h</text>
+<text x="452.0" y="424">&#947;</text><text x="461.4" y="427" font-size="10">h</text>
+<text x="470.0" y="37">&#956;</text><text x="479.4" y="40" font-size="10">h</text>
+<text x="470.0" y="194">&#956;</text><text x="479.4" y="197" font-size="10">h</text>
+<text x="470.0" y="338">&#956;</text><text x="479.4" y="341" font-size="10">h</text>
+<text x="470.0" y="482">&#956;</text><text x="479.4" y="485" font-size="10">h</text>
+<text x="722.0" y="136">&#947;</text><text x="731.4" y="139" font-size="10">h</text>
+<text x="722.0" y="424">&#947;</text><text x="731.4" y="427" font-size="10">h</text>
+<text x="740.0" y="37">&#956;</text><text x="749.4" y="40" font-size="10">h</text>
+<text x="740.0" y="194">&#956;</text><text x="749.4" y="197" font-size="10">h</text>
+<text x="740.0" y="338">&#956;</text><text x="749.4" y="341" font-size="10">h</text>
+<text x="740.0" y="482">&#956;</text><text x="749.4" y="485" font-size="10">h</text>
 </g>
 </svg>
